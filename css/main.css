@@ -1,0 +1,514 @@
+﻿body
+{
+    background: #e6e6e6;
+}
+
+.wrap 
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 70px;
+    padding-top: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.header .logo 
+{
+    width: 140px;
+    height: 60px;
+    margin: 0 20px;
+}
+
+.header .logo, .header .nav 
+{
+    float: left;
+}
+
+.header .nav 
+{
+    padding: 0;
+    margin: 0;
+}
+
+.header .nav li
+{
+    list-style: none;
+    float: left;
+}
+
+.header .nav li a
+{
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #14191e;
+}
+
+.header .nav li a:hover, .header .nav li a:active
+{
+    color: #f01414;
+}
+
+.header .right 
+{
+    float: right;
+}
+
+.header .search, .header .user 
+{
+    float: left;
+}
+
+.header .search 
+{
+    margin: 18px;
+    position:relative;
+}
+
+.header .search .search-input 
+{
+    font-size: 12px;
+    height: 23px;
+    padding: 5px 25px 5px 10px;
+    width: 210px;
+    border: none;
+    border-bottom: 1px solid rgba(120,125,130,.8);
+    color: #71777d;
+    outline: 0;
+    background: #e6e6e6;
+}
+
+.header .search .search-btn
+{
+    height: 42px;
+    line-height: 42px;
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    color: #787d82;
+}
+
+.header .right .user .signIn,
+.header .right .user .signOut
+{
+    padding: 0;
+    margin: 0;
+}
+
+.header .right .user .signIn li,
+.header .right .user .signOut li
+{
+    float: left;
+    list-style: none;
+}
+
+.header .right .user .signIn li a,
+.header .right .user .signOut li a
+{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #787d82;
+}
+
+.header .search .search-btn:hover,
+.header .search .search-btn:active,
+.header .right .user .signOut li a:hover,
+.header .right .user .signOut li a:active,
+.header .right .user .signIn li a:hover,
+.header .right .user .signIn li a:active
+{
+    color: #f01414;
+}
+
+.ad 
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* 登录注册 */
+.loginbody
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(120,125,130,.8);
+    z-index: 1000;
+    display: none;
+}
+
+.loginbody .loginbox 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #ffffff;
+    width: 300px;
+    height: 300px;
+    padding: 15px 20px;
+}
+
+.loginbody .loginbox .title
+{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 300px;
+}
+
+.loginbody .loginbox .title li
+{
+    float: left;
+    list-style: none;
+}
+
+.loginbody .loginbox .title li a
+{
+    display: block;
+    text-decoration: none;
+    color: #14191e;
+    padding: 0 20px 15px;
+    background: #ffffff;
+}
+
+.loginbody .loginbox .title .title-login a
+{
+    color: #f01414;
+    border-bottom: 1px solid #f01414;
+}
+
+.loginbody .loginbox .title li.close
+{
+    float: right;
+    
+}
+
+.loginbody .loginbox .title li.close a
+{
+    border: 0;
+    padding: 0 0 15px; 
+}
+
+.loginbody .loginbox .title li.close a:hover,
+.loginbody .loginbox .title li.close a:active
+{
+    border-bottom: 0 !important;
+}
+
+.loginbody .loginbox .title li a:hover,
+.loginbody .loginbox .title li a:active
+{
+    color: #f01414 !important;
+    border-bottom: 1px solid #f01414 !important;
+}
+
+.loginbody .loginbox .title-border-bottom
+{
+    position: absolute;
+    margin: 0;
+    padding-bottom:15px;
+    border-bottom: 1px solid rgba(120,125,130,.8);
+    width: 300px;
+}
+
+.loginbody .loginbox .login, .loginbody .loginbox .register
+{
+    margin-top: 35px;
+    padding: 30px 10px; 
+    font-size:12px;
+}
+.loginbody .loginbox .register 
+{
+    display: none;
+}
+
+.loginbody .loginbox .login .input, .loginbody .loginbox .register .input
+{
+    height: 30px;
+    width: 100%;
+    outline-color: #f01414;
+}
+
+.loginbody .loginbox .login .tool .ckb
+{
+    color: #787d82;
+    height:20px;
+    line-height:20px;
+}
+
+.loginbody .loginbox .login .login-btn, .loginbody .loginbox .register .register-btn
+{
+    height: 40px;
+    width: 100%;
+    background: #f01414;
+    color: #ffffff;
+    border: none;
+    margin-top: 10px;
+}
+
+.loginbody .loginbox .err
+{
+    padding:0;
+    margin: 0;
+    height:20px;
+    line-height: 20px;
+    color: #f01414;
+    visibility: hidden;
+}
+
+.loginbody .loginbox .register #finishBody
+{
+    display: none;
+}
+
+.loginbody .loginbox .register #finishBody p
+{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.loginbody .loginbox .register #finishBody p a
+{
+    color: #f01414;
+}
+
+/* 主体部分 */
+.main-body 
+{
+    width: 95%;
+    margin: 0 auto;
+    color: #424242;
+}
+
+.main-body .main-title-body 
+{
+    overflow: hidden;
+}
+
+.main-body .main-title-body .main-title
+{
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.main-body .main-title-body .main-title li
+{
+    float: left;
+    list-style: none;
+}
+
+.main-body .main-title-body .main-title li a
+{
+    display: block;
+    margin: 10px 20px;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #424242;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.main-body .main-title-body .main-title li a.choose 
+{
+    border-bottom: 2px solid #f01414;
+    color: #f01414;
+}
+
+.main-body .main .product
+{
+    overflow: hidden;
+}
+
+.main-body .main .product .item
+{
+    width: 18%;
+    margin: 1%;
+    float: left;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+   /* box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.2); */
+}
+
+.main-body .main .product .item-hover
+{
+    top: -7px;
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.2);
+}
+
+.main-body .main .product .item .tool
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    padding: 10px;
+    display: none;
+}
+
+.main-body .main .product .item .tool .tool-love
+{
+    float: left;
+    font-size: 18px;
+}
+
+.main-body .main .product .item .tool .tool-love a:hover,
+.main-body .main .product .item .tool .tool-love a:active,
+.main-body .main .product .item .tool .tool-shoppingcart a:hover,
+.main-body .main .product .item .tool .tool-shoppingcart a:active
+{
+    color:#f01414;
+}
+
+.main-body .main .product .item .tool .tool-love span, .main-body .main .product .item .tool .tool-shoppingcart span
+{
+    font-size: 12px;
+    display: none;
+}
+
+.main-body .main .product .item .tool .tool-shoppingcart
+{
+    float:right;
+    font-size: 18px;
+}
+
+.main-body .main .product .item .img-box
+{
+    margin: 10px;
+}
+
+.main-body .main .product .item .img-box img
+{
+    width: 100%;
+}
+
+.main-body .main .product .item .info
+{
+    margin: 10px;
+    text-align: center;
+}
+.main-body .main .product .item .info .price
+{
+    color: #f01414;
+}
+
+.main-body .main #prdPad
+{
+    display: none;
+}
+
+.main-body .main #prdPC
+{
+    display: none;
+}
+
+.main-body .main #prdTV
+{
+    display: none;
+}
+
+/*底部 */
+.footer
+{
+    background: #ffffff;
+    width:100%;
+}
+
+.footer .contact 
+{
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer .contact span
+{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.footer .contact span img
+{
+    width:50px;
+}
+
+.footer .contact span #WXQRcode, .footer .contact span #QQQRcode
+{
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: -240px;
+    left: -75px;
+}
+
+.footer .foot-list
+{
+    padding: 0;
+    width: 90%;
+    margin: 20px auto;
+    text-align:center;
+    overflow: hidden;
+}
+
+.footer .foot-list>li
+{
+    float: left;
+    list-style: none;
+    width: 20%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer .foot-list li ul
+{
+    padding: 0;
+    margin-top:20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer .foot-list li ul li
+{
+    list-style: none;
+    margin: 10px;
+}
+
+.footer .foot-list li ul li a
+{
+    color: #787d82;
+    text-decoration: none;
+}
+
+.footer .foot-list li ul li a:hover,
+.footer .foot-list li ul li a:active
+{
+    color: #f01414;
+}
+
+.footer .copyright 
+{
+    width:90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #787d82;
+    font-size: 14px;
+    border-top: 1px solid #787d82;
+}
